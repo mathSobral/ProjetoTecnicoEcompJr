@@ -1,5 +1,5 @@
 ## Aplicação em execução
-Clicar na imagem abaixo lhe redirecionar para o video no youtube com a aplicação em execução.
+Clicar na imagem abaixo lhe redirecionar para o video no youtube com a aplicação em execução.<br>
 [![Execucao da aplicação](https://img.youtube.com/vi/WtjGgg18Iss/0.jpg)](https://www.youtube.com/watch?v=WtjGgg18Iss "Aplicação em execução")
 
 ## Projeto Empresa Junior
