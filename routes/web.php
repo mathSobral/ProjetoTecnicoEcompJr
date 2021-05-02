@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FederationController;
 use App\Http\Controllers\JuniorCompanyController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +20,9 @@ Route::get('/', function () {
     return view('dashboard');
 });
 
+Route::get('home', [HomeController::class, 'index'])->name('home');
+
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
@@ -26,3 +30,4 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::resource('federations', FederationController::class);
 
 Route::resource('junior_companies', JuniorCompanyController::class);
+Route::get('search', [JuniorCompanyController::class, 'search'])->name('search');
