@@ -17,7 +17,7 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', function () {
-    return view('dashboard');
+    return view('home.index');
 });
 
 Route::get('home', [HomeController::class, 'index'])->name('home');
@@ -27,7 +27,13 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-Route::resource('federations', FederationController::class);
 
-Route::resource('junior_companies', JuniorCompanyController::class);
+Route::group( ['middleware' => 'auth:sanctum' ], function()
+{
+    Route::resource('federations', FederationController::class);
+
+    Route::resource('junior_companies', JuniorCompanyController::class);
+
+});
+
 Route::get('search', [JuniorCompanyController::class, 'search'])->name('search');
