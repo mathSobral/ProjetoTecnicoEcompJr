@@ -1,6 +1,6 @@
 ## Aplicação em execução
-
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/WtjGgg18Iss/0.jpg)](https://www.youtube.com/watch?v=WtjGgg18Iss)
+Clicar na imagem abaixo lhe redirecionar para o video no youtube com a aplicação em execução.
+[![Execucao da aplicação](https://img.youtube.com/vi/WtjGgg18Iss/0.jpg)](https://www.youtube.com/watch?v=WtjGgg18Iss "Aplicação em execução")
 
 ## Projeto Empresa Junior
 O objetivo deste desafio é usar o framework php `laravel` para criar um sistema de cadastro de empresas junior e das federações que elas pertencem. O 
