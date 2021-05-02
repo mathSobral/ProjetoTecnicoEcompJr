@@ -1,6 +1,6 @@
 ## Projeto Empresa Junior
 O objetivo deste desafio é usar o framework php `laravel` para criar um sistema de cadastro de empresas junior e das federações que elas pertencem. O 
-sistema deve possuir autenticação ser capaz de realizar pesquisas a partir dos nomes das empresas junior.<br> 
+sistema deve possuir autenticação, além ser capaz de realizar pesquisas a partir dos nomes das empresas junior.<br> 
 Abaixo segue a lista dos requisitos:<br>
 <ul>
     <li> 
@@ -23,4 +23,5 @@ Abaixo segue a lista dos requisitos:<br>
 ### Estrutura do projeto
 Para o implementação do area de autenticação foi utilizado o pacote `Jetstream` para construção dos models e midlewares e o pacote `livewire` para construção das views.<br>
 As funcionalidades foram implementadas seguindo o diagrama de classes da imagem abaixo.
+<br>
 ![Diagrama de Classes](readme_resources/models.jpg?raw=true "Title")
