@@ -24,4 +24,4 @@ Abaixo segue a lista dos requisitos:<br>
 Para o implementação do area de autenticação foi utilizado o pacote `Jetstream` para construção dos models e midlewares e o pacote `livewire` para construção das views.<br>
 As funcionalidades foram implementadas seguindo o diagrama de classes da imagem abaixo.
 <br>
-![Diagrama de Classes](readme_resources/models.jpg?raw=true "Title")
+![Diagrama de Classes](readme_resources/models.jpg?raw=true "Diagrama de Classes")
