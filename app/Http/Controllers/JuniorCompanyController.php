@@ -109,19 +109,7 @@ class JuniorCompanyController extends Controller
     }
 
     public function search(Request $request){
-        $federation = null;
-
-        if($request->federation_name != '')
-            $federation = Federation::where('name', 'LIKE', "%{$request->federation_name}%")->get()->last();
-
-        if($request->name == null && !$federation)
-            $junior_companies = JuniorCompany::latest()->paginate(5);
-        else
-            if($federation == null)
-                $junior_companies = JuniorCompany::where('name', 'LIKE', "%{$request->name}%")->get();
-            else
-                $junior_companies = JuniorCompany::where('federation_id', '=', $federation ? $federation->id:0)->get();
-
+        $junior_companies = JuniorCompany::where('name', 'LIKE', "%{$request->name}%")->where('federation_id', '=', "{$request->federation_id}")->get();
 
         return view('junior_companies.index', compact('junior_companies'))
         ->with('i', (request()->input('page', 1) - 1) * 5);;

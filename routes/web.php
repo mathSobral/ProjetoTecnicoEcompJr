@@ -31,9 +31,9 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::group( ['middleware' => 'auth:sanctum' ], function()
 {
     Route::resource('federations', FederationController::class);
-
     Route::resource('junior_companies', JuniorCompanyController::class);
-
 });
+
+
 
 Route::get('search', [JuniorCompanyController::class, 'search'])->name('search');

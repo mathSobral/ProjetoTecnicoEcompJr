@@ -38,7 +38,12 @@
                     Pesquisa:
                     <input type="text" name="name" placeholder="Nome"/>
 
-                <input type="text" name="federation_name" placeholder="Federação"/>
+                    <select id="federations" name="federation_id">
+                        @foreach ($federations as $federation)
+                            <option value="{{$federation->id}}">{{$federation->name}}</option>
+                        @endforeach
+
+                      </select>
                 <button type="submit">Pesquisar</button>
                 </div>
 

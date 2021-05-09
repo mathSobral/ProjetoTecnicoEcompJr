@@ -16,7 +16,7 @@ class CreateJuniorCompaniesTable extends Migration
         Schema::create('junior_companies', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->integer('federation_id')->references('id')->on('federations');
+            $table->foreignId('federation_id')->constrained('federations')->onDelete('cascade');
             $table->timestamps();
         });
     }
